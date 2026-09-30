@@ -1,6 +1,6 @@
 <?php
 
-namespace ProtoneMedia\LaravelVerifyNewEmail\Mail;
+namespace Squipix\LaravelVerifyNewEmail\Mail;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;

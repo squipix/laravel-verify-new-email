@@ -1,6 +1,6 @@
 <?php
 
-namespace ProtoneMedia\LaravelVerifyNewEmail;
+namespace Squipix\LaravelVerifyNewEmail;
 
 use Exception;
 

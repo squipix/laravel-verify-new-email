@@ -1,11 +1,11 @@
 {
-    "name": "protonemedia/laravel-verify-new-email",
+    "name": "squipix/laravel-verify-new-email",
     "description": "Package to handle email address updates and verification",
     "keywords": [
         "protonemedia",
         "laravel-verify-new-email"
     ],
-    "homepage": "https://github.com/protonemedia/laravel-verify-new-email",
+    "homepage": "https://github.com/squipix/laravel-verify-new-email",
     "license": "MIT",
     "type": "library",
     "authors": [
@@ -25,12 +25,12 @@
     },
     "autoload": {
         "psr-4": {
-            "ProtoneMedia\\LaravelVerifyNewEmail\\": "src"
+            "Squipix\\LaravelVerifyNewEmail\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "ProtoneMedia\\LaravelVerifyNewEmail\\Tests\\": "tests"
+            "Squipix\\LaravelVerifyNewEmail\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -46,7 +46,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "ProtoneMedia\\LaravelVerifyNewEmail\\ServiceProvider"
+                "Squipix\\LaravelVerifyNewEmail\\ServiceProvider"
             ]
         }
     }

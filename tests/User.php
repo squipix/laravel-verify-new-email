@@ -1,10 +1,10 @@
 <?php
 
-namespace ProtoneMedia\LaravelVerifyNewEmail\Tests;
+namespace Squipix\LaravelVerifyNewEmail\Tests;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
-use ProtoneMedia\LaravelVerifyNewEmail\MustVerifyNewEmail;
+use Squipix\LaravelVerifyNewEmail\MustVerifyNewEmail;
 
 class User extends Authenticatable
 {

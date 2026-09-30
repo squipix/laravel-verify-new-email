@@ -1,6 +1,6 @@
 <?php
 
-namespace ProtoneMedia\LaravelVerifyNewEmail\Http;
+namespace Squipix\LaravelVerifyNewEmail\Http;
 
 use Illuminate\Support\Facades\Auth;
 
@@ -11,7 +11,7 @@ trait VerifiesPendingEmails
      *
      * @param  string $token
      *
-     * @throws \ProtoneMedia\LaravelVerifyNewEmail\Http\InvalidVerificationLinkException
+     * @throws \Squipix\LaravelVerifyNewEmail\Http\InvalidVerificationLinkException
      */
     public function verify(string $token)
     {

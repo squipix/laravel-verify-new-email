@@ -1,10 +1,10 @@
 <?php
 
-namespace ProtoneMedia\LaravelVerifyNewEmail\Tests;
+namespace Squipix\LaravelVerifyNewEmail\Tests;
 
 use Illuminate\Support\Str;
-use ProtoneMedia\LaravelVerifyNewEmail\Mail\VerifyNewEmail;
-use ProtoneMedia\LaravelVerifyNewEmail\PendingUserEmail;
+use Squipix\LaravelVerifyNewEmail\Mail\VerifyNewEmail;
+use Squipix\LaravelVerifyNewEmail\PendingUserEmail;
 
 class VerifyNewEmailTest extends TestCase
 {

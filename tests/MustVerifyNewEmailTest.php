@@ -1,14 +1,14 @@
 <?php
 
-namespace ProtoneMedia\LaravelVerifyNewEmail\Tests;
+namespace Squipix\LaravelVerifyNewEmail\Tests;
 
 use Illuminate\Mail\Mailable;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Testing\Fakes\MailFake;
-use ProtoneMedia\LaravelVerifyNewEmail\InvalidEmailVerificationModelException;
-use ProtoneMedia\LaravelVerifyNewEmail\Mail\VerifyFirstEmail;
-use ProtoneMedia\LaravelVerifyNewEmail\Mail\VerifyNewEmail;
-use ProtoneMedia\LaravelVerifyNewEmail\PendingUserEmail;
+use Squipix\LaravelVerifyNewEmail\InvalidEmailVerificationModelException;
+use Squipix\LaravelVerifyNewEmail\Mail\VerifyFirstEmail;
+use Squipix\LaravelVerifyNewEmail\Mail\VerifyNewEmail;
+use Squipix\LaravelVerifyNewEmail\PendingUserEmail;
 
 class MustVerifyNewEmailTest extends TestCase
 {

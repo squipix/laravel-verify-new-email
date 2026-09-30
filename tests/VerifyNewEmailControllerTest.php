@@ -1,14 +1,14 @@
 <?php
 
-namespace ProtoneMedia\LaravelVerifyNewEmail\Tests;
+namespace Squipix\LaravelVerifyNewEmail\Tests;
 
 use Illuminate\Auth\Events\Verified;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\Mail;
-use ProtoneMedia\LaravelVerifyNewEmail\Http\InvalidVerificationLinkException;
-use ProtoneMedia\LaravelVerifyNewEmail\Http\VerifyNewEmailController;
-use ProtoneMedia\LaravelVerifyNewEmail\PendingUserEmail;
+use Squipix\LaravelVerifyNewEmail\Http\InvalidVerificationLinkException;
+use Squipix\LaravelVerifyNewEmail\Http\VerifyNewEmailController;
+use Squipix\LaravelVerifyNewEmail\PendingUserEmail;
 
 class VerifyNewEmailControllerTest extends TestCase
 {

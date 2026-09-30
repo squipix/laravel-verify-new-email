@@ -1,9 +1,9 @@
 <?php
 
-namespace ProtoneMedia\LaravelVerifyNewEmail\Tests;
+namespace Squipix\LaravelVerifyNewEmail\Tests;
 
 use Orchestra\Testbench\TestCase as OrchestraTestCase;
-use ProtoneMedia\LaravelVerifyNewEmail\ServiceProvider;
+use Squipix\LaravelVerifyNewEmail\ServiceProvider;
 
 class TestCase extends OrchestraTestCase
 {

@@ -1,9 +1,9 @@
 # Laravel Verify New Email
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/protonemedia/laravel-verify-new-email.svg?style=flat-square)](https://packagist.org/packages/protonemedia/laravel-verify-new-email)
-![run-tests](https://github.com/protonemedia/laravel-verify-new-email/workflows/run-tests/badge.svg)
-[![Quality Score](https://img.shields.io/scrutinizer/g/protonemedia/laravel-verify-new-email.svg?style=flat-square)](https://scrutinizer-ci.com/g/protonemedia/laravel-verify-new-email)
-[![Total Downloads](https://img.shields.io/packagist/dt/protonemedia/laravel-verify-new-email.svg?style=flat-square)](https://packagist.org/packages/protonemedia/laravel-verify-new-email)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/squipix/laravel-verify-new-email.svg?style=flat-square)](https://packagist.org/packages/squipix/laravel-verify-new-email)
+![run-tests](https://github.com/squipix/laravel-verify-new-email/workflows/run-tests/badge.svg)
+[![Quality Score](https://img.shields.io/scrutinizer/g/squipix/laravel-verify-new-email.svg?style=flat-square)](https://scrutinizer-ci.com/g/squipix/laravel-verify-new-email)
+[![Total Downloads](https://img.shields.io/packagist/dt/squipix/laravel-verify-new-email.svg?style=flat-square)](https://packagist.org/packages/squipix/laravel-verify-new-email)
 
 
 Laravel supports verifying email addresses out of the box. This package adds support for verifying *new* email addresses. When a user updates its email address, it won't replace the old one until the new one is verified. Super easy to set up, still fully customizable. If you want it can be used as a drop-in replacement for the built-in Email Verification features as this package supports unauthenticated verification and auto-login. Support for Laravel 9.0 and higher and requires PHP 8.2 or higher.
@@ -28,7 +28,7 @@ If you want to know more about the background of this package, please read [the 
 You can install the package via composer:
 
 ```bash
-composer require protonemedia/laravel-verify-new-email
+composer require squipix/laravel-verify-new-email
 ```
 
 ## Configuration
@@ -36,7 +36,7 @@ composer require protonemedia/laravel-verify-new-email
 Publish the database migration, config file and email view:
 
 ```bash
-php artisan vendor:publish --provider="ProtoneMedia\LaravelVerifyNewEmail\ServiceProvider"
+php artisan vendor:publish --provider="Squipix\LaravelVerifyNewEmail\ServiceProvider"
 ```
 
 You can set the redirect path in the `verify-new-email.php` config file. The user will be redirected to this path after verification.
@@ -55,7 +55,7 @@ namespace App;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
-use ProtoneMedia\LaravelVerifyNewEmail\MustVerifyNewEmail;
+use Squipix\LaravelVerifyNewEmail\MustVerifyNewEmail;
 
 class User extends Authenticatable implements MustVerifyEmail
 {
@@ -99,7 +99,7 @@ namespace App;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
-use ProtoneMedia\LaravelVerifyNewEmail\MustVerifyNewEmail;
+use Squipix\LaravelVerifyNewEmail\MustVerifyNewEmail;
 
 class User extends Authenticatable implements MustVerifyEmail
 {
@@ -121,9 +121,9 @@ You can change the content of the verification mail by editing the published vie
 
 return [
 
-    'mailable_for_first_verification' => \ProtoneMedia\LaravelVerifyNewEmail\Mail\VerifyFirstEmail::class,
+    'mailable_for_first_verification' => \Squipix\LaravelVerifyNewEmail\Mail\VerifyFirstEmail::class,
 
-    'mailable_for_new_email' => \ProtoneMedia\LaravelVerifyNewEmail\Mail\VerifyNewEmail::class,
+    'mailable_for_new_email' => \Squipix\LaravelVerifyNewEmail\Mail\VerifyNewEmail::class,
 
 ];
 ```
@@ -138,8 +138,8 @@ namespace App;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
-use ProtoneMedia\LaravelVerifyNewEmail\MustVerifyNewEmail;
-use ProtoneMedia\LaravelVerifyNewEmail\PendingUserEmail;
+use Squipix\LaravelVerifyNewEmail\MustVerifyNewEmail;
+use Squipix\LaravelVerifyNewEmail\PendingUserEmail;
 
 class User extends Authenticatable implements MustVerifyEmail
 {
@@ -182,15 +182,15 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 ## Other Laravel packages
 
 * [`Inertia Table`](https://inertiaui.com/inertia-table?utm_source=github&utm_campaign=laravel-verify-new-email): The Ultimate Table for Inertia.js with built-in Query Builder.
-* [`Laravel Blade On Demand`](https://github.com/protonemedia/laravel-blade-on-demand): Laravel package to compile Blade templates in memory.
-* [`Laravel Cross Eloquent Search`](https://github.com/protonemedia/laravel-cross-eloquent-search): Laravel package to search through multiple Eloquent models.
-* [`Laravel Eloquent Scope as Select`](https://github.com/protonemedia/laravel-eloquent-scope-as-select): Stop duplicating your Eloquent query scopes and constraints in PHP. This package lets you re-use your query scopes and constraints by adding them as a subquery.
-* [`Laravel FFMpeg`](https://github.com/protonemedia/laravel-ffmpeg): This package provides an integration with FFmpeg for Laravel. The storage of the files is handled by Laravel's Filesystem.
-* [`Laravel MinIO Testing Tools`](https://github.com/protonemedia/laravel-minio-testing-tools): Run your tests against a MinIO S3 server.
-* [`Laravel Mixins`](https://github.com/protonemedia/laravel-mixins): A collection of Laravel goodies.
-* [`Laravel Paddle`](https://github.com/protonemedia/laravel-paddle): Paddle.com API integration for Laravel with support for webhooks/events.
-* [`Laravel Task Runner`](https://github.com/protonemedia/laravel-task-runner): Write Shell scripts like Blade Components and run them locally or on a remote server.
-* [`Laravel XSS Protection`](https://github.com/protonemedia/laravel-xss-protection): Laravel Middleware to protect your app against Cross-site scripting (XSS). It sanitizes request input, and it can sanatize Blade echo statements.
+* [`Laravel Blade On Demand`](https://github.com/squipix/laravel-blade-on-demand): Laravel package to compile Blade templates in memory.
+* [`Laravel Cross Eloquent Search`](https://github.com/squipix/laravel-cross-eloquent-search): Laravel package to search through multiple Eloquent models.
+* [`Laravel Eloquent Scope as Select`](https://github.com/squipix/laravel-eloquent-scope-as-select): Stop duplicating your Eloquent query scopes and constraints in PHP. This package lets you re-use your query scopes and constraints by adding them as a subquery.
+* [`Laravel FFMpeg`](https://github.com/squipix/laravel-ffmpeg): This package provides an integration with FFmpeg for Laravel. The storage of the files is handled by Laravel's Filesystem.
+* [`Laravel MinIO Testing Tools`](https://github.com/squipix/laravel-minio-testing-tools): Run your tests against a MinIO S3 server.
+* [`Laravel Mixins`](https://github.com/squipix/laravel-mixins): A collection of Laravel goodies.
+* [`Laravel Paddle`](https://github.com/squipix/laravel-paddle): Paddle.com API integration for Laravel with support for webhooks/events.
+* [`Laravel Task Runner`](https://github.com/squipix/laravel-task-runner): Write Shell scripts like Blade Components and run them locally or on a remote server.
+* [`Laravel XSS Protection`](https://github.com/squipix/laravel-xss-protection): Laravel Middleware to protect your app against Cross-site scripting (XSS). It sanitizes request input, and it can sanatize Blade echo statements.
 
 ### Security
 

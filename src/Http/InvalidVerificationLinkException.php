@@ -1,6 +1,6 @@
 <?php
 
-namespace ProtoneMedia\LaravelVerifyNewEmail\Http;
+namespace Squipix\LaravelVerifyNewEmail\Http;
 
 use Illuminate\Auth\AuthenticationException;
 
