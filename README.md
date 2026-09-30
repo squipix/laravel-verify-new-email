@@ -8,15 +8,7 @@
 
 Laravel supports verifying email addresses out of the box. This package adds support for verifying *new* email addresses. When a user updates its email address, it won't replace the old one until the new one is verified. Super easy to set up, still fully customizable. If you want it can be used as a drop-in replacement for the built-in Email Verification features as this package supports unauthenticated verification and auto-login. Support for Laravel 9.0 and higher and requires PHP 8.2 or higher.
 
-## Sponsor Us
-
-[<img src="https://inertiaui.com/visit-card.jpg" />](https://inertiaui.com/inertia-table?utm_source=github&utm_campaign=laravel-verify-new-email)
-
-❤️ We proudly support the community by developing Laravel packages and giving them away for free. If this package saves you time or if you're relying on it professionally, please consider [sponsoring the maintenance and development](https://github.com/sponsors/pascalbaljet) and check out our latest premium package: [Inertia Table](https://inertiaui.com/inertia-table?utm_source=github&utm_campaign=laravel-verify-new-email). Keeping track of issues and pull requests takes time, but we're happy to help!
-
-## Blogpost
-
-If you want to know more about the background of this package, please read [the blog post](https://protone.media/en/blog/an-add-on-to-laravels-built-in-email-verification-only-update-a-users-email-address-if-the-new-one-is-verified-as-well).
+> **Note:** This package is a fork of [`protonemedia/laravel-verify-new-email`](https://github.com/protonemedia/laravel-verify-new-email) maintained by Squipix.
 
 ## Requirements
 
